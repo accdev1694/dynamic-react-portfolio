@@ -1,13 +1,11 @@
-import './App.css'
-import './index.css'
-function App() {
+import styles from "./App.module.css"
 
-  
+function App() {  
 
   return (
-    <>
-      <LoadingScreen />
-    </>
+    <div className={styles.App}>
+      hello world
+    </div>
   )
 }
 
