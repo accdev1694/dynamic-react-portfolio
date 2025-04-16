@@ -1,9 +1,11 @@
 :root{
     /* Colors */
     --color-bg: #1F2235; /* Dark background color */
+    --color-bg-dark: #0f101aa1; /* Dark background color */
     --color-primary: #FFFFFF; /* Light text color */
     --color-secondary: #707882; /* Secondary text color */
     --color-accent: #FF5757; /* Icons, buttons, section headings */
+    --color-accent-faded: #ff57576c; /* Icons, buttons, section headings */
 
     /* Fonts */
     --font-poppins: "Poppins", "Montserrat", sans-serif; /* Main heading, Nav */

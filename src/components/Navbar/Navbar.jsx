@@ -1,16 +1,32 @@
+import { getImgUrl } from "../../utils";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   return (
-    <nav className={styles.navbar}>
-      <a href="/">Portfolio</a>
-      <div className={styles.navlinks}>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contacts">Contacts</a>
+    <div className={styles.navBar}>
+      <a href="/" className={styles.title}>Portfolio</a>
+      <div className={styles.menu}>
+        <img
+          className={styles.menuBtn}
+          src={getImgUrl("/assets/nav/menuIcon.png")}
+          alt="Menu Button"
+        />
+        <ul className={styles.menuList}>
+          <li>
+            <a href="/">About</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#Projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
   );
 };
 
