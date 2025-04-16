@@ -4,7 +4,7 @@ import styles from "./Navbar.module.css";
 const Navbar = () => {
   return (
     <div className={styles.navBar}>
-      <a href="/" className={styles.title}>Portfolio</a>
+      <a className={styles.title} href="/">Portfoli<span className={styles.emphasisedText}>o</span></a>
       <div className={styles.menu}>
         <img
           className={styles.menuBtn}
