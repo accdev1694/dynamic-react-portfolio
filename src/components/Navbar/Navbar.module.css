@@ -1,10 +1,13 @@
 
+
+
 .navBar{
+    /* position: relative; */
     display: flex;
     padding-top: 50px;
-    padding: 50px 10% 0 10%;
+    margin: 0 10%;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 a.title {
@@ -20,6 +23,11 @@ a.title {
 .navBar a{
     text-decoration: none;
     color: var(--color-primary);
+    transition: all 0.3s ease-in-out;
+}
+
+.navBar a:hover{
+    color: var(--color-accent-faded);
 }
 
 .menuBtn{
@@ -31,4 +39,42 @@ a.title {
     list-style: none;
     font-size: 0.8em;
 
+}
+
+@media screen and (max-width:768px) {
+
+    .menu{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        right: 0;
+        align-items: flex-end;
+        z-index: 3;
+    }
+    .menuList{
+        display: none;
+        
+    }
+
+    .menuList.active{
+        display: flex;
+        position: absolute;
+        right: 5%;
+        top: 75px;
+        flex-direction: column;
+        gap: 7px;
+        text-align: right;
+        /* background-color: var(--color-bg-dark); */
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border: 1px solid var(--color-accent-faded);
+    }
+
+    .menuBtn{
+        display: block;
+        cursor: pointer;
+        float: right;
+    }
 }
